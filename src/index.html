@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transaction Validator Web with pusher-beams notification</title>
+  <link rel="icon" type="image/png" href="logo-color.png" sizes="196x196" class="next-head">
+</head>
+
+<body>
+  <div id="html_logger"></div>
+  <script defer>
+    (function () {
+
+      // save the original console.log function
+      var old_logger = console.log;
+
+      // grab html element for adding console.log output
+      var html_logger = document.getElementById('html_logger');
+
+      // replace console.log function with our own function
+      console.log = function (msg) {
+
+        // first call old logger for console output
+        old_logger.call(this, arguments);
+
+        // check what we need to output (object or text) and add it to the html element.
+        if (typeof msg == 'object') {
+          html_logger.innerHTML += (JSON && JSON.stringify ? JSON.stringify(msg) : msg) + '<br>';
+        } else {
+          html_logger.innerHTML += msg + '<br>';
+        }
+      }
+    })();
+  </script>
+  <script type="module">
+    import { register } from './txn-validator-web.esm.js';
+
+    let env = 'test';
+    let uuid = '12ij3i23';
+    let accountAddr = 'TKXxsCFQaabura4tfui5V1YL7C6a5mbxyk';
+    let encMnemonicPhrase = {
+      data: "PE1C05/DTSzikUtS9fn3nh2+m/MuD7lzWHPtbsc4bYstwuZRbewEITQ5dsAXr3PkAYtCQbHekJRcV6VO3G6CMLvrPZvb66HvpOEUToGKHjugTc2D92Kgw4IvOy1t",
+      iv: "Wh86E08FCx7ahZM4ePiqlw==",
+      salt: "P2FhZBPjH3+2IOl5BxaF9VFsemSuFr2ph1GVnWRuP0Q="
+    };
+    register(env, uuid, accountAddr, JSON.stringify(encMnemonicPhrase));
+  </script>
+</body>
+
+</html>
