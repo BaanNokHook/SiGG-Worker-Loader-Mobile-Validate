@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validatorWorker should throw an error on the "chunkFilename" option with "[]" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "chunkFilename" option with "true" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "esModule" option with "true" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "filename" option with "[]" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "filename" option with "true" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "inline" option with "true" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "inline" option with "true" value 2`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "publicPath" option with "[]" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "publicPath" option with "true" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "/test/" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "[]" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "{"foo":"bar"}" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "{}" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "1" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "false" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "test" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "unknown" option with "true" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "worker" option with "[]" value 1`] = `"errors is not defined"`;
+
+exports[`validatorWorker should throw an error on the "worker" option with "true" value 1`] = `"errors is not defined"`;
